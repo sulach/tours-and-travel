@@ -1,0 +1,300 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header{
+	height: 100px;
+	background: #ffffcc;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+}
+
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+
+.logo a{
+	text-decoration: none;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: Lucid-Sans-Unicode;
+	color: black;
+	letter-spacing: 5px;
+}
+
+nav{
+	float: right;
+	line-height: 100px;
+}
+
+nav a{
+	text-decoration: none;
+	font-family: Courier-New;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 18px;
+	margin: 0 10px;
+	color: black;
+}
+
+#home{
+	color:#b3b300;
+}
+
+nav a:hover{
+	color:#b3b300;
+}
+
+
+.slide-content h5{
+	padding-top: 3%;
+	font-size: 15px;
+	font-family: sans-serif;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.slide-content h1{
+	padding-top: 6px;
+	font-size: 80px;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.button1{
+	padding: 12px 30px;
+	margin: 10px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+	background: #00ace6;
+	color: white;
+	margin-top: 10px;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+.button1:hover{
+	background: #ffa31a;;
+}
+
+footer{
+	bottom: 0;
+	padding-top: 10px;
+	background-color: #4d4d4d;
+	color: white;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+h3{
+	color: #3696dc;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.para{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.container{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.last{
+	margin: 0 15px 25px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+	0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 1px;
+	width: 35%;
+	position: relative;
+	flex-basis: 33%;
+}
+
+.about{
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.button2{
+
+	margin: 20px;
+	padding: 8px 15px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+	background:   #4d4d4d;
+	color: white;
+}
+
+.button2:hover{
+	background: #00ace6;
+}
+
+quick a{
+	text-decoration: none;
+	font-family: Courier-New;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 15px;
+	margin: 0 10px;
+	color: black;
+}
+
+.copyright{
+	background: #4d4d4d;
+	padding: 30px;
+}
+
+section{
+	bottom: 0;
+	padding-top: 10px;
+	background-color: #ffeb99;
+	color: #4d4d4d;
+	font-family: 'Barlow Condensed', sans-serif;
+	padding: 50px 0;
+}
+
+h2{
+	color: #3399ff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.which{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.travel{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.this{
+	background: white;
+	margin: 0 15px 25px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+	0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 1px;
+	width: 35%;
+	position: relative;
+	flex-basis: 33%;
+}
+
+.that{
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#slider, .wrap, .slide-content{
+	margin:0;
+	padding: 0;
+	top: 100px;
+	font-family: 'Barlow Condensed', sans-serif;
+	width: 100%;
+	height: 500px;
+	overflow-x: hidden;
+}
+
+.wrap{
+	position: relative;
+}
+
+.slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide1{
+	background-image: url('images/1.jpg');
+}
+
+.slide2{
+	background-image: url('images/2.jpg');
+}
+
+.slide3{
+	background-image: url('images/3.jpg');
+}
+
+.slide4{
+	background-image: url('images/10.jpg');
+}
+
+.slide-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.slide-content span{
+	font-size: 5rem;
+	color: white;
+	animation: ease 2s;
+}
+
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left{
+	border-width: 30px 40px 30px 0;
+	border-color: transparent white transparent transparent;
+	left:0;
+	margin-left: 20px;
+}
+
+#arrow-right{
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent white;
+	right: 0;
+	margin-right: 30px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Columbia Travel & Tour- Home Page</title>
+	<link rel="shortcut icon" href="images/LLL.jpg">
+	<link rel="stylesheet" type="text/css" href="css/home.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+<body>
+
+<div class="box-area">
+	<header>
+		<div class="wrapper">
+			<div class="logo"><h1><a href="#">Columbia</a></h1></div>
+			<nav>
+				<div class="nav_menu">
+					<a href="#" id="home">Home</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="about.html">About Us</a>
+					<a href="contact.html">Contacts</a>
+					<a href="tours.html">Tours</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+<div class="wrap">
+	<div id="arrow-left" class="arrow"></div>
+	<div id="slider">
+		<div class="slide slide1">
+			<div class="slide-content">
+				<span><h5>Where to next?</h5>
+					<h1><p></p><p>TRAVEL</p><p></p></h1>
+					<a href="form.html" class="button1">Book a tour</a>
+				</span>
+			</div>
+		</div>
+		<div class="slide slide2">
+			<div class="slide-content">
+				<span><h5>Where to next?</h5>
+					<h1><p></p><p>EXPLORE</p><p></p></h1>
+					<a href="form.html" class="button1" target="_blank">Book a tour</a>
+				</span>
+			</div>
+		</div>
+		<div class="slide slide3">
+			<div class="slide-content">
+				<span><h5>Where to next?</h5>
+					<h1><p></p><p>LIVE</p><p></p></h1>
+					<a href="form.html" class="button1" target="_blank">Book a tour</a>
+				</span>
+			</div>
+		</div>
+		<div class="slide slide4">
+			<div class="slide-content">
+				<span><h5>Where to next?</h5>
+					<h1><p></p><p>REPEAT</p><p></p></h1>
+					<a href="form.html" class="button1" target="_blank">Book a tour</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="arrow-right" class="arrow"></div>
+</div>
+
+
+<script>
+	let sliderImages = document.querySelectorAll('.slide'),
+		arrowLeft = document.querySelector('#arrow-left'),
+		arrowRight = document.querySelector('#arrow-right'),
+		current = 0;
+
+	//clear all images
+	function reset(){
+		for(let i = 0; i < sliderImages.length; i++){
+			sliderImages[i].style.display = 'none';
+		}
+	}
+
+	//initialize slider
+	function startSlide(){
+		reset();
+		sliderImages[0].style.display = 'block';
+	}
+
+	//show prev
+	function slideLeft(){
+		reset();
+		sliderImages[current-1].style.display = 'block';
+		current--;
+	}
+
+	//show next
+	function slideRight(){
+		reset();
+		sliderImages[current+1].style.display = 'block';
+		current++;
+	}
+
+	//left arrow click
+	arrowLeft.addEventListener('click', function(){
+		if(current === 0){
+			current = sliderImages.length;
+		}
+		slideLeft();
+	});
+
+	//right arrow click
+	arrowRight.addEventListener('click', function(){
+		if(current === sliderImages.length){
+			current = -1;
+		}
+		slideRight();
+	});
+
+	startSlide();
+</script>
+
+
+
+<br><br><br><br><br>
+<br><br><br>
+
+<section>
+	<div class="travel">
+		<div class="this">
+			<div class="that">
+				<h2>Travel</h2>
+				<p class="which">Everyone keeps saying how important it is to travel. So what's all this fuss about? Why do people travel and love travelling?More importantly: why should we travel more?The benefits of traveling are not just a one-time thing: traveling changes you physically and psychologically. Having little time or money isn't a valid excuse. You can fly for cheap very easily.</p>
+			</div>
+		</div>
+		<div class="this">
+			<div class="that">
+				<h2>Health</h2>
+				<p class="which">From cutting down on stress, to lowering your chances of developing a heart disease, the health benefits of traveling are huge. You may stay sitting on a chair all day long at the workplace: including some walking to your trip is sure to make your body feel better. For some people, wandering abroad is even a cure for depression and anxiety. Of course, it's not a foolproof cure, but it will help you feel better, both physically and psychologically. </p>
+			</div>
+		</div>
+		<div class="this">
+			<div class="that">
+				<h2>Culture</h2>
+				<p class="which">Being more understanding and tolerant of a culture,different than ours is part of being smarter, but I consider it as a benefits of traveling in itself. You could think of it this way: if you read what's in the news or watch the news on TV and don't question it, you're missing on a ton of information. You might think that it makes you smarter and more aware of the world, but it's the exact opposite; it narrows your mind to a unique and biased perspective.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<br><br>
+
+
+<footer>
+	<div class="container">
+	<div class="last">
+	<div class="about">
+		<h3>Columbia</h3><br>
+		<p class="para">Columbia Tours and Travel is a private travel agencey helping individuals to satisfy their fantasies about going far and wide. We give numerous objections mainstream among explorers alongside all around arranged outings. Each colleague proficient at their work. The clients are happy with the administration given and inclination to travel all the more regularly with our agencey. The travel planners are extremely proficient and experienced and are additionally gifted in different dialects henceforth assisting with speaking with individuals over the world.</p>
+	</div></div>
+	<div class="last">
+	<div class="about">
+			<div class="escape"><h3>Quick escape</h3><br></div>
+				<div class="quick">
+					<a href="index.html" class="button2">Home</a><br><br><br>
+					<a href="gallery.html" class="button2">Gallery</a><br><br><br>
+					<a href="about.html" class="button2">About Us</a><br><br><br>
+					<a href="contact.html" class="button2">Contacts</a><br><br><br>
+					<a href="tours.html" class="button2">Tours</a><br><br><br>
+				</div>
+	</div></div>
+	<div class="last">
+	<div class="about"><h3>Find Us On</h3><br>
+		<div class="social">
+		<a href="http://www.facebook.com/" class="button2" target="_blank">Facebook</a><br><br><br>
+		<a href="http://www.instagram.com/" class="button2" target="_blank">Instagram</a><br><br><br>
+		<a href="http://www.youtube.com/" class="button2" target="_blank">Youtube</a><br><br><br>
+		<a href="http://www.pinterest.com/" class="button2" target="_blank">Pinterest</a><br><br><br>
+		<a href="http://www.linkedin.com/" class="button2" target="_blank">Linkedin</a><br><br><br>
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="copyright"><p>ColumbiaTours&Travels @ 1990. All rights reserved</p></div>
+</footer>
+
+
+</body>
+</html>
